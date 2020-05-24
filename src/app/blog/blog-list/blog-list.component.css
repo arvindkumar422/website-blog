@@ -1,0 +1,11 @@
+.blog_image {
+  max-height: 100px;
+}
+
+.blog_item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 2%;
+  cursor: pointer;
+  background: #ffddda;
+}
