@@ -8,7 +8,7 @@ export class HttpBlogService {
 
   constructor(private httpClient: HttpClient) { }
 
-  postBlog(blogTitle: string, content: string, imageUrl: string) {
+  postBlog(blogTitle: string, content:  string, imageUrl: string) {
     return this.httpClient.post('/api/createblog', {title: blogTitle, body: content, imgUrl: imageUrl});
   }
 

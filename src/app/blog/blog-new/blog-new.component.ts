@@ -17,9 +17,12 @@ export class BlogNewComponent implements OnInit {
   }
 
   onSubmitBlog() {
-    console.log(this.blogForm);
+    var div = document.createElement("div");
+    div.innerHTML = this.blogForm.value.blogData.content;
+    console.log(String(div.outerHTML))
+
     this.httpBlogService.postBlog(this.blogForm.value.blogData.title,
-      this.blogForm.value.blogData.content,
+      String(div.outerHTML),
       this.blogForm.value.blogData.blogImgUrl).subscribe(
       data => {
         console.log(data);

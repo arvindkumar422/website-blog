@@ -1,39 +1,120 @@
 <div id="projects" class="background-alt">
-  <h2 class="heading">Projects</h2>
-  <div class="container">
-      <div class="row">
-          <div class="project shadow-large">
-              <div class="project-image">
-                  <img src="../../assets/images/project.jpg" />
-              </div>
-              <!-- End .project-image -->
-              <div class="project-info">
-                  <h3>Project Name Here</h3>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                  </p>
-                  <a href="#">View Project</a>
-              </div>
-              <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-
-          <div class="project shadow-large">
-              <div class="project-image">
-                  <img src="../../assets/images/project.jpg" />
-              </div>
-              <!-- End .project-image -->
-              <div class="project-info">
-                  <h3>Project Name Here</h3>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                  </p>
-                  <a href="#">View Project</a>
-              </div>
-              <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-      </div>
-  </div>
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="prjimg" src="../../assets/images/carbon.jpg" />
+                </div>
+                <div class="project-info">
+                    <h3 class="prjtitle">Carbon footprint tracker</h3>
+                    <p>
+                        A web application created with MEAN stack to track carbon emissions over a journey
+                        based on factors including distance travelled, transport mode, etc. while mapping
+                        out the journey on an interactive map.
+                    </p>
+                    <p>
+                        The application has a social aspect as well, with live tweets relevant to the topic are
+                        streamed onto the app using Apache Kafka and a news API currently being integrated.
+                    </p>
+                    <p>
+                        Technologies used: Angular, Node.js, Java, MongoDB, Express, ElasticSearch, Apache Kafka,
+                        agm-direction, Redis, polyline, Google distance matrix, AWS EC2, Git, Inginx
+                    </p>
+                    <a href="https://github.com/arvindkumar422/carbon-footprint-frontend">Github (frontend)</a>
+                    <a href="https://github.com/BrundaSreedhar/carbon-footprint-backend">Github (backend)</a>
+                    <a href="#">View deployment</a>
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="prjimg" src="../../assets/images/logo.png" />
+                </div>
+                <div class="project-info">
+                    <h3>Recognize anything?</h3>
+                    <p>
+                        A website created using React and Python to detect faces, food, items and patterns in an image
+                        submitted as a URL.
+                    </p>
+                    <p>
+                        The application makes use of 2 APIs - The ClarifAI API which is external and an OpenCV API written by 
+                        me in Pythin using Flask and deployed on AWS Elastic Beanstalk. The user may choose either of these and 
+                        compare/contrast their performance.
+                    </p>
+                    <p>
+                        Technologies used: React, Flask, Python, OpenCV, Caffe, ClarifAI API, AWS Amplify, Git, Elastic
+                        Beanstalk, Font Awesome, Bootstrap, CSS
+                    </p>
+                    <a href="#">View deployment</a>
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="prjimg" src="../../assets/images/dist.png" />
+                </div>
+                <div class="project-info">
+                    <h3>Distributed file service</h3>
+                    <p>
+                        A fault tolerant Distributed file system built with Java that facilitates multithreaded access 
+                        for users to interact with multiple servers to perform CRUD operations on files stored and 
+                        replicated across these servers. 
+                    </p>
+                    <p>
+                        Program enforces Mutual exclusion, data replication, distributed transaction, fault tolerance, 
+                        consistency and consensus.
+                    </p>
+                    <p>
+                        Technologies/concepts used: Java, Load balanceing, Paxos consensus algorithm, Socket programming
+                    </p>
+                    <a href="https://github.com/arvindkumar422/Distributed-File-System">View Project</a>
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="prjimg" src="../../assets/images/tix.png" />
+                </div>
+                <div class="project-info">
+                    <h3>Microtix</h3>
+                    <p>
+                        An E-commerce ticketing application built with Microservices predominantly using Node.js, 
+                        React, Docker, Kubernetes.
+                    </p>
+                    <p>
+                        A number of microservices were implented using Node - Authentiation, Payments, Orders, Tickets and 
+                        Payments. A common module was also extracted into an npm module and uploaded online as an npm package.
+                        This project taught me how complicated a Micoservice architecture can be to build, scale and deploy.
+                    </p>
+                    <p>
+                        Technologies used: Node.js, Next.js, NATS, Skaffold, Ingress, MongoDB, 
+                        Stripe.js, Docker, Kubernetes, Express, DigitalOcean, Git, npm
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="prjimg" src="../../assets/images/soccer.png" />
+                </div>
+                <div class="project-info">
+                    <h3>False Nine</h3>
+                    <p>
+                        A sports website built around soccer for news, live scores, leagues, standings, etc 
+                        developed with React, MongoDB and Node.js.
+                    </p>
+                    <p>
+                        Also integreated are a set of user functionalities like a discussion forum allowing 
+                        registered users to paticipate in. 3 levels of users are supported - normal user, pro-user 
+                        with access to extra soccer leagues, and admin user with admin privileges like banning other usrs.
+                    </p>
+                    <p>
+                        Technologies used: React, Express, Node.js, Node.js, MongoDB, Bootstrap, external APIs, Heroku, 
+                        Git
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <!-- End .project -->
+        </div>
+    </div>
 </div>
 <!-- End #projects -->
